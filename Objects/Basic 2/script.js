@@ -63,3 +63,14 @@ const user = [
 ];
 
 const arrayAccess =   user[1].email;
+
+// Object de-Structure
+
+const course = {
+    course: "js",
+    price: 1000,
+    teacherName: "kaif"
+}
+
+const {teacherName: teacher} = course;
+// console.log(teacher);
