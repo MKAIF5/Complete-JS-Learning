@@ -51,13 +51,40 @@ const language = {
 }
 
 for (const key in language) {
-//    console.log(`${key} And The Full Name Is ${language[key]}`);
+    //    console.log(`${key} And The Full Name Is ${language[key]}`);
 }
 
 // arrays 
 
-const coding = ["js" , "cpp" , "py" , "java"];
+const coding = ["js", "cpp", "py", "java"];
 
 for (const key in coding) {
-   console.log(key);
+    //    console.log(coding[key]);
 }
+
+// for each
+
+const programming = ["javascript", "python", "java", "swift"];
+
+programming.forEach(function (item, index, arr) {
+    // console.log(item , index);
+})
+
+const dbValues = [
+    {
+        name: "kaif",
+        age: 16
+    },
+    {
+        name: "arham",
+        age: 17
+    },
+    {
+        name: "imran",
+        age: 15
+    },
+];
+
+dbValues.forEach((val) => {
+   console.log(val.age);
+})
