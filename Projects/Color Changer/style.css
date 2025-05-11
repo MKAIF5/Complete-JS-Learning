@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+  margin-top: 10%;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0px;
+}
+
+h1{
+    text-align: center;
+}
+
+.button{
+    width: 40px;
+    padding: 4rem;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.last-heading{
+   margin-top: 10px;
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
+#red{
+    background-color: red;
+}
+#yellow{
+    background-color: yellow;
+}
+#orange{
+    background-color: orange;
+}
