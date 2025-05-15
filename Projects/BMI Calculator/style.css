@@ -43,6 +43,11 @@ button{
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
+  border: none;
+  cursor: pointer;
+}
+button:hover{
+    background-color:rgb(228, 166, 49) ;
 }
 
 .result{
