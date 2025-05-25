@@ -51,7 +51,6 @@ class Teacher extends UserInheritance {
         this.email = email
         this.password = password
     }
-
     addCourse() {
         console.log(`A New Course Was Added By ${this.username}`);
     }
