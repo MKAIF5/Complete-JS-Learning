@@ -48,5 +48,27 @@ function colorhandler(color) {
     };
 };
 
-document.getElementById("orange").addEventListener("click", colorhandler("orange"))
-document.getElementById("green").addEventListener("click", colorhandler("green"))
+document.getElementById("orange").addEventListener("click", colorhandler("orange"));
+document.getElementById("green").addEventListener("click", colorhandler("green"));
+
+// Real World : Bank Account
+
+function createAccount(initBalance){
+   let balance = initBalance;
+
+   return {
+      deposit: function(amount){
+        balance += amount;
+        console.log(`Deposited : ${amount}`);
+      },
+
+      getBalance: function(){
+        console.log(`Balanced : ${balance}`);
+      }
+   }
+}
+
+const myAccount = createAccount(1000);
+
+myAccount.deposit(500);
+myAccount.getBalance();
