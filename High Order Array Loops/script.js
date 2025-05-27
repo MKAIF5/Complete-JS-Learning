@@ -86,5 +86,36 @@ const dbValues = [
 ];
 
 dbValues.forEach((val) => {
-   console.log(val.age);
+    //    console.log(val.age);
 })
+
+// task : (for of) and (for in);
+
+const students = [
+    {
+        name: "Ali",
+        marks: { math: 85, english: 78, science: 92 }
+    },
+    {
+        name: "Sara",
+        marks: { math: 90, english: 88, science: 95 }
+    },
+    {
+        name: "Umar",
+        marks: { math: 70, english: 60, science: 80 }
+    }
+];
+
+for (const student of students) {
+    console.log(`Name : ${student.name}`);
+
+    let total = 0;
+
+    for (const subject in student.marks) {
+        //  console.log(subject);
+        const score = student.marks[subject]
+        console.log(`${subject} : ${score}`);
+        total += score
+    }
+    console.log(`Total Marks : ${total}`);
+};
