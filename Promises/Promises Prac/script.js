@@ -102,7 +102,23 @@ const response = fetch("https://api.github.com/users/mkaif5")
 async function apiUsed() {
     const data = await response
     const dataComming = await data.json()
-    console.log(dataComming);
+    // console.log(dataComming);
 
 }
-apiUsed()
+apiUsed();
+
+// Example Function
+
+function waitTwoSecond() {
+    return new Promise((resolve , reject) => {
+        setTimeout(() => {
+            resolve("Wait 2 Second...!")
+        }, 2000);
+    })
+}
+
+waitTwoSecond().then((message) => {
+    console.log(`${message}`);
+}).catch((error) =>{
+    console.log(error);
+})
