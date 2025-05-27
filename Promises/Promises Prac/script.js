@@ -110,7 +110,7 @@ apiUsed();
 // Example Function
 
 function waitTwoSecond() {
-    return new Promise((resolve , reject) => {
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve("Wait 2 Second...!")
         }, 2000);
@@ -118,7 +118,28 @@ function waitTwoSecond() {
 }
 
 waitTwoSecond().then((message) => {
-    console.log(`${message}`);
-}).catch((error) =>{
-    console.log(error);
-})
+    // console.log(`${message}`);
+}).catch((error) => {
+    // console.log(error);
+});
+
+// mathematics example
+
+function divide(a, b) {
+    return new Promise((resolve, reject) => {
+        if (a === 0 || b === 0) {
+            reject("Plz Enter A Value Greater Than 0");
+        }
+        else {
+            resolve(a / b);
+        }
+    })
+}
+
+divide(10, 5)
+    .then((message) => {
+        console.log(message);
+    })
+    .catch((error) => {
+        console.log(error);
+    })
