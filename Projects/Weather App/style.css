@@ -70,26 +70,39 @@ body {
   margin-top: -10px;
 }
 
-.details{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    margin-top: 50px;
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
 }
 
-.col{
-    display: flex;
-    align-items: center;
-    text-align: left;
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
 }
 
-.col img{
-    width: 40px;
-    margin-right: 10px;
+.col img {
+  width: 40px;
+  margin-right: 10px;
 }
 
-.humidity , .wind{
-    font-size: 25px;
-    margin-top: -6px;
+.humidity,
+.wind {
+  font-size: 25px;
+  margin-top: -6px;
+}
+
+.weather {
+  display: none;
+}
+
+.error {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
 }
